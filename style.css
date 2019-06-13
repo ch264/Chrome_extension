@@ -1,0 +1,56 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.greeting-wrapper { 
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.greeting {
+	font-size: 4em;
+}
+
+.settings {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	transition: all 0.7s; 
+	transform: translateX(-100%);
+
+}
+.settings-open.settings {
+	transform: none;
+}
+
+input {
+	margin: 1em;
+	padding: 1em;
+	font-size: 1em;
+	width: 14em;
+	height: 3em;
+	border: 1px solid #313131;
+}
+
+button {
+	height: 2em;
+	width: 5.5em;
+	background: none;
+	color: #313131;
+	border-radius: 12px;
+	border: 1px solid #313131;
+	cursor: pointer;
+	margin: 2em;
+}
+
+form {
+	padding-top: 1.5em;
+}
