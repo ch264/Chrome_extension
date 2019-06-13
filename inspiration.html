@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>You got this!</title>
+	<style>
+	html {
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.settings {
+		background: yellow;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		transition: all 1s; 
+		transform: translateX(-100%);
+	
+	}
+	.settings-open.settings {
+		transform: none;
+	}
+
+	input {
+		padding: 0.5em;
+		font-size: 1em;
+		width: 10em;
+		height: 4em;
+	}
+
+	button {
+		height: 2em;
+		width: 5em;
+		background: none;
+		color: #313131;
+		border-radius: 12px;
+		border: 1px solid #313131;
+		cursor: pointer;
+	}
+
+	form {
+		padding-top: 1.5em;
+	}
+	</style>
+</head>
+<body>
+		
+		<div class="content"></div>
+		<!-- <h1>You got this, Toyota</h1> -->
+
+		<div class="greeting-wrapper">
+				<h2 id="greeting" class="greeting"></h2>
+		</div>
+		
+
+
+		<button id="button-settings">Settings</button>
+
+		<div id="settings" class="settings">
+			<form action="#" id="form-name">
+				<input type="text" id="input-name" placeholder="Type your name here..">
+				<button id="button-name">Add</button>
+			</form>
+		</div>
+
+		<script src="background.js"></script>
+</body>
+</html>
