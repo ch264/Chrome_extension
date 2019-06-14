@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+
 html {
 	box-sizing: border-box;
 	height: 100%;
@@ -6,17 +8,20 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('art-background-blue-1037992.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 
 .greeting-wrapper { 
 	display: flex;
-	align-content: center;
 	justify-content: center;
 }
 
 .greeting {
-	font-size: 4em;
+	font-size: 5em;
 }
 
 .settings {
@@ -41,16 +46,70 @@ input {
 }
 
 button {
+	cursor: pointer;
+	background-color: Transparent;
+}
+
+#button-settings {
 	height: 2em;
 	width: 5.5em;
-	background: none;
 	color: #313131;
 	border-radius: 12px;
 	border: 1px solid #313131;
-	cursor: pointer;
 	margin: 2em;
+}	 
+
+#button-name {
+	height: 2em;
+	width: 5.5em;
+	color: #313131;
+	border-radius: 12px;
+	border: 1px solid #313131;
+
+}
+
+
+#button-snack {
+	background-image: url(lotus.png);
+	width: 2.5em;
+	height: 2.5em;
+	background-size: cover;
+	border: none;
+	position: absolute;
+	top: 1em;
+}
+
+.snack {
+	display: flex;
+	justify-content: flex-end;
+	top: -5em;
+	margin: 2em;
+
+}
+
+#mindful-snack{
+	opacity: 0;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 5em;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	size: 80%;
+}
+#mindful-snack.show-snack {
+	opacity: 1;
 }
 
 form {
 	padding-top: 1.5em;
+}
+
+.author {
+	/* display: flex;
+	justify-content: flex-end;
+	margin-right: 2em;
+	margin-bottom: 0; */
+	position: absolute;
+	right: 2em;
+	bottom: 2em;
 }

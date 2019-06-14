@@ -12,17 +12,34 @@ if (userName == null) {
 
 
 // random quotes that are displayed on page refresh
-let quotes = [
-	"You got it, Toyota",
-	"I believe in you",
-	"This too, shall pass",
-	"Yas Kweeen, you can do it",
-	"Lets talk about coding..",
-	"Goldenrod",
-	"Team Brockit",
-	"Bralton",
-	"Charmazon",
-	"Canada rocks"
+// let quotes = [
+// 	"You got it, Toyota",
+// 	"I believe in you",
+// 	"This too, shall pass",
+// 	"Yas Kweeen, you can do it",
+// 	"Lets talk about coding..",
+// 	"Goldenrod",
+// 	"Team Brockit",
+// 	"Bralton",
+// 	"Charmazon",
+// 	"Canada rocks"
+// ]
+
+let mindfulSnack = [
+	"Mindfully eat a craisin", 
+	"Take a deep breath in, and breath out", 
+	"Where are your feet? can you feel them?", 
+	"Smile and take a deep breath", 
+	"Stop and listen, what can you hear?", 
+	"What can you see?",
+	"What can you hear?",
+	"Are you drinking enough water?",
+	"A decluttered space calms the mind",
+	"Take two mindful bites",
+	"What does one breath feel like?",
+	"Pay attention to how the air feels on your skin",
+	"Slow down, take a step back, take a deep breath, you got this",
+	"Everybody stretch!"
 ]
 
 
@@ -34,7 +51,11 @@ let quotes = [
 // opens the settings form
 function openSettings() {
 	document.getElementById('settings').classList.toggle('settings-open');
-	console.log('in button')
+}
+
+// show mindful snack
+function showSnack() {
+	document.getElementById('mindful-snack').classList.toggle('show-snack');
 }
 
 // saves userName to localStorage
@@ -50,7 +71,7 @@ function changeName() {
 
 // displays userName in greeting
 function getGreeting() {
-	document.getElementById('greeting').innerHTML = `Why, hello there ${userName}. You got this!`;
+	document.getElementById('greeting').innerHTML = `Hello ${userName}. You got this!`;
 }
 
 	// pick a quote at random
@@ -81,6 +102,13 @@ document.getElementById('button-settings').addEventListener('click', openSetting
 // On click on add button, change the userName
 document.getElementById("button-name").addEventListener('click', function(){
 	changeName();
+})
+
+// On click on add button, show a mindfullness snack
+document.getElementById("button-snack").addEventListener('click', function(){
+	let randomMindfulSnack = quote(mindfulSnack);
+	document.getElementById('mindful-snack').innerHTML = randomMindfulSnack;
+	showSnack();
 })
 
 
