@@ -42,7 +42,9 @@ let mindfulSnack = [
 	"What does one breath feel like?",
 	"Pay attention to how the air feels on your skin",
 	"Slow down, take a step back, take a deep breath, you got this",
-	"Everybody stretch!"
+	"Everybody stretch!",
+	"Smile, you look wonderful",
+	"Challange excepted"
 ]
 
 
